@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/googlesansflex_medium"
+        android:text="City Park Expansion Approved by City Park Expansion Approved byCity Park Expansion Approved by Council"
+        android:maxLines="2"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:lineSpacingExtra="3dp"
+        android:id="@+id/tvTitle"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/googlesansflex_medium"
+        android:text="City Park "
+        app:layout_constraintEnd_toStartOf="@+id/tvDate"
+        android:maxLines="1"
+        android:paddingTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/grey"
+        android:id="@+id/tvAuthor"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/googlesansflex_medium"
+        android:text="25 oct 2025"
+        android:paddingTop="8dp"
+        android:textAlignment="viewEnd"
+        android:maxLines="1"
+        android:textColor="@color/grey"
+        app:layout_constraintStart_toEndOf="@+id/tvAuthor"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/tvDate"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

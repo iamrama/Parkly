@@ -24,14 +24,4 @@ class NewsRepository @Inject constructor(private val newsApi: NewsApi, private v
 
             ).flow
     }
-
-    suspend fun getBreakingNews(countryCode: String, pagenum: Int): Response<NewsResponse>{
-
-        return newsApi.getBreakingNews(countryCode, pagenum)
-
-    }
-
-    suspend fun getSearchNews(searchQuery: String, pageNum:Int): Response<NewsResponse>{
-        return newsApi.getSearchNews(searchQuery,pageNum)
-    }
 }
